@@ -7,7 +7,7 @@
   --date-text-color: rgba(255, 255, 255, 0.5);
   --article-bg-color: #fff;
   --article-text-color: #656565;
-  
+
   /* Timeline Colors */
   /*--color-timeline-1: #e74c3c;*/
   --color-timeline-1: #e74c3c;
@@ -97,7 +97,7 @@ section#timeline article div.inner span.date span.month {
 }
 
 section#timeline article div.inner span.date span.year {
-  font-size: 10px;
+  font-size: 22px;
 }
 
 section#timeline article div.inner h2 {
@@ -116,7 +116,7 @@ section#timeline article div.inner h2:after {
   position: absolute;
   top: 20px;
   right: -5px;
-  width: 10px; 
+  width: 10px;
   height: 10px;
   transform: rotate(-45deg);
 }
@@ -124,7 +124,7 @@ section#timeline article div.inner h2:after {
 section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   background: var(--article-bg-color);
   color: var(--article-text-color);
   border-radius: 0 0 6px 6px;
