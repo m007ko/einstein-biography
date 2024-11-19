@@ -1,0 +1,73 @@
+﻿<span class="year">1879</span>
+<h2>Birth in Ulm, Germany</h2>
+<p>Albert Einstein is born on March 14 in Ulm, Germany, to Hermann Einstein and Pauline Koch. Six weeks later, the family moves to Munich, where Einstein will begin his early education</p>
+
+
+<span class="year">1895</span>
+<h2>Move to Switzerland</h2>
+<p>Einstein moves to Switzerland and attends the cantonal school in Aarau. He renounces his German citizenship and later gains admission to the Swiss Federal Polytechnic School in Zurich</p>
+
+
+<span class="year">1901</span>
+<h2>Swiss Citizenship and Patent Office</h2>
+<p>Einstein obtains Swiss citizenship. Unable to find a teaching position, he accepts a job as a technical assistant at the Swiss Patent Office in Berne</p>
+
+
+<span class="year">1905</span>
+<h2>Annus Mirabilis</h2>
+<p>In his "miracle year," Einstein publishes four groundbreaking papers, including his special theory of relativity and the famous equation E = mc². He also receives his PhD from the University of Zurich</p>
+
+
+<span class="year">1914</span>
+<h2>Move to Berlin</h2>
+<p>Einstein becomes a professor at the University of Berlin and a member of the Prussian Academy of Sciences. He also becomes director of the Kaiser Wilhelm Institute for Physics</p>
+
+
+<span class="year">1915</span>
+<h2>General Theory of Relativity</h2>
+<p>Einstein completes and publishes his general theory of relativity, which extends his system of mechanics to incorporate gravitation</p>
+
+
+<span class="year">1919</span>
+<h2>World Fame</h2>
+<p>A solar eclipse confirms Einstein's predictions on the deflection of light rays, leading to his remarkable rise to world fame. He also marries his cousin, Elsa Löwenthal</p>
+
+
+<span class="year">1921</span>
+<h2>First Visit to the United States</h2>
+<p>Einstein makes his first trip to the United States with Chaim Weizmann. He is welcomed in New York City and gives lectures at several universities</p>
+
+
+<span class="year">1922</span>
+<h2>Nobel Prize in Physics</h2>
+<p>Einstein is awarded the 1921 Nobel Prize in Physics for his work on the photoelectric effect, rather than for his more controversial relativity theories</p>
+
+
+<span class="year">1933</span>
+<h2>Emigration to the United States</h2>
+<p>With the rise of Nazi power in Germany, Einstein renounces his German citizenship and emigrates to the United States. He accepts a position at the Institute for Advanced Study in Princeton, New Jersey</p>
+
+
+<span class="year">1939</span>
+<h2>Letter to President Roosevelt</h2>
+<p>Einstein signs a letter to President Franklin D. Roosevelt, warning about the potential development of "extremely powerful bombs of a new type" and recommending that the U.S. begin similar research. This letter eventually leads to the Manhattan Project</p>
+
+
+<span class="year">1940</span>
+<h2>American Citizenship</h2>
+<p>Einstein becomes a United States citizen, while retaining his Swiss citizenship</p>
+
+
+<span class="year">1945</span>
+<h2>Retirement and Continued Research</h2>
+<p>Einstein retires from his position at the Institute for Advanced Study but continues his work on unified field theory and becomes increasingly involved in political causes</p>
+
+
+<span class="year">1952</span>
+<h2>Offer of Israeli Presidency</h2>
+<p>Einstein is offered the presidency of the State of Israel, which he declines</p>
+
+
+<span class="year">1955</span>
+<h2>Death and Legacy</h2>
+<p>On April 18, Einstein dies at Princeton Hospital from an abdominal aortic aneurysm. His brain is preserved for scientific study, and his ashes are scattered in the Delaware River</p>

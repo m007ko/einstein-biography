@@ -7,7 +7,7 @@
   --date-text-color: rgba(255, 255, 255, 0.5);
   --article-bg-color: #fff;
   --article-text-color: #656565;
-  
+
   /* Timeline Colors */
   /*--color-timeline-1: #e74c3c;*/
   --color-timeline-1: #e74c3c;
@@ -26,6 +26,46 @@ html, body {
 body {
   background: var(--background-color);
 }
+header {
+  height: 30px;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--line-color);
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;  
+  gap: 10px;
+  padding: 10px 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--date-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: var(--line-color);
+  color: #fff;
+}
+
+/*.navigation a:not(:last-child)::after {
+  content: '—'; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  color: var(--date-text-color); 
+}*/
 
 section#timeline {
   width: 80%;
@@ -49,6 +89,7 @@ section#timeline article {
   width: 100%;
   margin: 0 0 20px 0;
   position: relative;
+  scroll-margin-top: 70px; 
 }
 
 section#timeline article:after {
@@ -97,7 +138,7 @@ section#timeline article div.inner span.date span.month {
 }
 
 section#timeline article div.inner span.date span.year {
-  font-size: 10px;
+  font-size: 22px;
 }
 
 section#timeline article div.inner h2 {
@@ -116,7 +157,7 @@ section#timeline article div.inner h2:after {
   position: absolute;
   top: 20px;
   right: -5px;
-  width: 10px; 
+  width: 10px;
   height: 10px;
   transform: rotate(-45deg);
 }
@@ -124,7 +165,7 @@ section#timeline article div.inner h2:after {
 section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   background: var(--article-bg-color);
   color: var(--article-text-color);
   border-radius: 0 0 6px 6px;
@@ -178,3 +219,4 @@ section#timeline article:nth-child(5) div.inner h2 {
 section#timeline article:nth-child(5) div.inner h2:after {
   background: var(--color-timeline-5);
 }
+
