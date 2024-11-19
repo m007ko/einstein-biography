@@ -250,7 +250,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
 
 .sticky-header {
-  display: none; 
+  display: none;
   position: sticky;
   top: 0;
   background-color: white;
@@ -275,6 +275,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
 .sticky-text {
   padding-left: 100px;
+}
 
 /* new styles for the additional 10 elements */
 section#timeline article:nth-child(6) div.inner h2 {
