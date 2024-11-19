@@ -248,6 +248,34 @@ section#timeline article:nth-child(5) div.inner h2:after {
   background: var(--color-timeline-5);
 }
 
+
+.sticky-header {
+  display: none; 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-image {
+  max-width: 150px;
+  padding-right: 100px;
+}
+
+.sticky-rounded-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.sticky-text {
+  padding-left: 100px;
+
 /* new styles for the additional 10 elements */
 section#timeline article:nth-child(6) div.inner h2 {
   background: var(--color-timeline-6);
@@ -345,4 +373,5 @@ section#timeline article:nth-child(15) div.inner h2:after {
 /* Hover effect for the button */
 .scroll-arrow:hover {
   background-color: rgba(255, 255, 255, 1);
+
 }

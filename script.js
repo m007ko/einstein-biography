@@ -26,6 +26,25 @@ articles.forEach((article, index) => {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("header");
+  const stickyMain = document.getElementById("sticky-main");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) {
+        stickyMain.style.display = "flex";
+      } else {
+        stickyMain.style.display = "none";
+      }
+    },
+    { root: null, threshold: 0 }
+  );
+
+  observer.observe(header);
+});
+
 // Listen for scroll events on the window
 window.onscroll = function() {
   var arrow = document.getElementById("scrollToTop");
@@ -41,3 +60,4 @@ window.onscroll = function() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
