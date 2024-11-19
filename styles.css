@@ -53,9 +53,15 @@ header {
   font-weight: bold;
 }
 
-.navigation {
+.sticky-div {
   position: sticky;
   top: 0;
+  z-index: 10;
+}
+
+.navigation {
+  position: sticky;
+  top: 10;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -64,6 +70,7 @@ header {
   padding: 10px 0;
   z-index: 10;
   border-bottom: 1px solid var(--line-color);
+  height: 3vh;
 }
 
 .navigation a {
@@ -79,6 +86,36 @@ header {
 .navigation a:hover {
   background-color: var(--line-color);
   color: #fff;
+}
+
+.sticky-header {
+  display: none;
+  position: sticky;
+  top: 0;
+  background: var(--background-color);
+  z-index: 10;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding-top: 6vh; */
+}
+
+.sticky-image {
+  max-width: 150px;
+  padding-right: 100px;
+}
+
+.sticky-rounded-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.sticky-text {
+  padding-left: 100px;
+  color: var(--article-bg-color);
 }
 
 /*.navigation a:not(:last-child)::after {
@@ -249,33 +286,7 @@ section#timeline article:nth-child(5) div.inner h2:after {
 }
 
 
-.sticky-header {
-  display: none;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 10;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.sticky-image {
-  max-width: 150px;
-  padding-right: 100px;
-}
-
-.sticky-rounded-image {
-  width: 100%;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-}
-
-.sticky-text {
-  padding-left: 100px;
-}
 
 /* new styles for the additional 10 elements */
 section#timeline article:nth-child(6) div.inner h2 {
