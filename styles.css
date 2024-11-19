@@ -328,3 +328,21 @@ section#timeline article:nth-child(15) div.inner h2 {
 section#timeline article:nth-child(15) div.inner h2:after {
   background: var(--color-timeline-15);
 }
+
+/* Styles for the Scroll to Top Button */
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+/* Hover effect for the button */
+.scroll-arrow:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
