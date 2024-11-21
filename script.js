@@ -61,3 +61,9 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    duration: 1200, 
+    easing: 'ease-in-out',
+  });
+});
