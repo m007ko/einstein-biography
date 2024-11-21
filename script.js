@@ -67,3 +67,22 @@ document.addEventListener("DOMContentLoaded", () => {
     easing: 'ease-in-out',
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const stickyImage = document.querySelector(".sticky-image img");
+  const articles = document.querySelectorAll("#timeline article");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const newImage = entry.target.getAttribute("data-image");
+          stickyImage.src = newImage;
+        }
+      });
+    },
+    { root: null, threshold: 0.5 } // Adjust threshold for when the transition occurs
+  );
+
+  articles.forEach((article) => observer.observe(article));
+});
