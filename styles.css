@@ -414,7 +414,7 @@ section#timeline article:last-child {
 }
 
 section#timeline:before {
-  height: calc(100% - 375px);
+  height: 94%;
 }
 
 
