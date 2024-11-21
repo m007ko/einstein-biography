@@ -1,4 +1,4 @@
-const navigation = document.getElementById("navigation");
+const navLinksContainer = document.querySelector(".nav-links-container");
 const articles = document.querySelectorAll("#timeline article");
 
 articles.forEach((article, index) => {
@@ -22,11 +22,11 @@ articles.forEach((article, index) => {
   });
 
 
-  navigation.appendChild(link);
+  navLinksContainer.appendChild(link);
 });
 
 
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
   const stickyMain = document.getElementById("sticky-main");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   observer.observe(header);
-});
+});*/
 
 // Listen for scroll events on the window
 window.onscroll = function() {
