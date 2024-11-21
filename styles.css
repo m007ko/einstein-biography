@@ -42,7 +42,7 @@ body {
 }
 
 header {
-  height: 30%;
+  /*height: 30%;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +51,10 @@ header {
   color: var(--date-text-color);
   font-size: 16px;
   font-weight: bold;
+
+  padding: 1rem 2rem 1rem 2rem;
 }
+
 
 .navigation {
   position: sticky;
