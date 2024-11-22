@@ -34,6 +34,7 @@ body {
   height: 33vh; 
   position: relative;
   padding: 40px;
+  overflow: hidden;
 
   background: 
     linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%), 
@@ -46,6 +47,23 @@ body {
                       linear-gradient(to left, black 20%, transparent 80%);
 }
 
+.header-content {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  color: var(--head-text-color);
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  color: var(--date-text-color);
+  line-height: 1.6;
+}
+
 .enhanced-header::before {
   content: "";
   position: absolute;
@@ -55,25 +73,6 @@ body {
   height: 100%; 
   background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%); 
   z-index: 1; 
-}
-
-.header-content {
-  z-index: 10; 
-  max-width: 80%;
-  text-align: left;
-  color: var(--head-text-color);
-}
-
-.header-content h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.header-content p {
-  margin-top: 3rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
 }
 
 .favicon-container {
@@ -509,7 +508,40 @@ section#timeline:before {
   }
 }
 
-/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .enhanced-header {
+    height: auto;
+    min-height: 40vh;
+    padding: 20px;
+    background: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+      url('src/photo_header_gr.png') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+  }
+
+  .header-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .header-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .header-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
 @media screen and (max-width: 768px) {
   section#timeline {
     width: 90%;
@@ -588,4 +620,3 @@ section#timeline:before {
   }
 
 }
-
