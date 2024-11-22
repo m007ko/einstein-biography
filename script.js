@@ -67,3 +67,38 @@ document.addEventListener("DOMContentLoaded", () => {
     easing: 'ease-in-out',
   });
 });
+
+
+
+/*
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  const middleOfViewport = scrollPosition + viewportHeight / 2;
+  const timeline = document.querySelector('section#timeline');
+  const timelineRect = timeline.getBoundingClientRect();
+  const timelineTop = timelineRect.top + scrollPosition;
+  const timelineBottom = timelineTop + timelineRect.height;
+
+  // Calculate the progress
+  let progress = 0;
+  if (middleOfViewport >= timelineTop && middleOfViewport <= timelineBottom) {
+    progress = ((middleOfViewport - timelineTop) / (timelineBottom - timelineTop)) * 100;
+  } else if (middleOfViewport > timelineBottom) {
+    progress = 100;
+  }
+
+  // Set the height of the pseudo-element
+  timeline.style.setProperty('--line-height', `${progress}%`);
+});
+
+
+  // Function to change the color of the pseudo-element
+  function changePseudoColor(newColor) {
+    document.documentElement.style.setProperty('--pseudo-color', newColor);
+  }
+
+  // Example usage: change color to red
+  changePseudoColor('#ff0000');
+*/
+
