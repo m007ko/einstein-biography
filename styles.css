@@ -89,8 +89,16 @@ body {
   background-color: var(--date-text-color); 
   padding: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 
 }
+
+.favicon-icon:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
 .navigation {
 
   display: flex;
@@ -102,7 +110,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-
+  
 }
 
 .nav-links-container {
@@ -126,7 +134,29 @@ body {
 
 .nav-links-container a:hover {
   background-color: var(--line-color);
-  color: #fff;
+  color: var(--article-bg-color); 
+}
+
+.sticky-photo {
+  position: sticky;
+  top: calc(5rem + 10px); 
+  right: 3rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.sticky-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sticky-photo.hidden {
+  display: none; 
 }
 
 /*
