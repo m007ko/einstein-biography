@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <title>3D journey</title>
+  <link rel="icon" type="image/x-icon" href="src/favico.png">
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Albert Einstein: 3D Journey around the globe</h1>
+      <p>Explore the places of Albert Einstein's life on a 3D globe.</p>
+    </div>
+  </header>
+
+  <container id="map-container">
+  <div id="earth" style="width: 100%; height: 600px;"></div>
+
+  <script>
+    // Initialize the WebGL Earth
+    var earth = new WE.map('earth', {
+      center: [46.4011, 10.0039],
+      zoom: 2
+    });
+
+    WE.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(earth);
+
+    // Add timeline markers
+    var markers = [
+    {lat: 48.4011, lon: 10.0039, title: 'Birth Place - Ulm'},
+    {lat: 48.1351, lon: 11.5820, title: 'Munich'},
+    {lat: 47.3769, lon: 8.5417, title: 'Zurich'},
+    {lat: 46.9480, lon: 7.4474, title: 'Swiss Patent Office'},
+    {lat: 52.5200, lon: 13.4050, title: 'Berlin'},
+    {lat: 40.3573, lon: -74.6672, title: 'Princeton, USA'}
+    ];
+
+    markers.forEach(function(marker) {
+      var m = WE.marker([marker.lat, marker.lon]).addTo(earth);
+      m.bindPopup(marker.title, {maxWidth: 120, closeButton: true}).openPopup();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
