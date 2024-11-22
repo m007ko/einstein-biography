@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <title>3D Globe with Timeline Markers</title>
+  <link rel="icon" type="image/x-icon" href="src/favico.png">
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+</head>
+<body>
+
+  <header id="header"> 
+    <div class="header-content">
+      <h1>3D Globe with Timeline Markers</h1>
+      <p>Explore the timeline of Albert Einstein's life on a 3D globe.</p>
+    </div>
+  </header>
+
+  <div id="earth" style="width: 100%; height: 600px;"></div>
+
+  <script>
+    // Initialize the WebGL Earth
+    var earth = new WE.map('earth', {
+      center: [46.8011, 8.2266],
+      zoom: 2
+    });
+
+    WE.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(earth);
+
+    // Add timeline markers
+    var markers = [
+      {lat: 48.8566, lon: 2.3522, title: 'Einstein in Paris', img: 'src/1895.webp'},
+    {lat: 40.7128, lon: -74.0060, title: 'Einstein in New York'},
+      {lat: 51.5074, lon: -0.1278, title: 'Einstein in London'}
+    ];
+
+    markers.forEach(function(marker) {
+      var m = WE.marker([marker.lat, marker.lon]).addTo(earth);
+      m.bindPopup(marker.title, {maxWidth: 120, closeButton: true}).openPopup();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
