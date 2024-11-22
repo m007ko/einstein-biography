@@ -1,4 +1,4 @@
-const navigation = document.getElementById("navigation");
+const navLinksContainer = document.querySelector(".nav-links-container");
 const articles = document.querySelectorAll("#timeline article");
 
 articles.forEach((article, index) => {
@@ -22,11 +22,11 @@ articles.forEach((article, index) => {
   });
 
 
-  navigation.appendChild(link);
+  navLinksContainer.appendChild(link);
 });
 
 
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
   const stickyMain = document.getElementById("sticky-main");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   observer.observe(header);
-});
+});*/
 
 // Listen for scroll events on the window
 window.onscroll = function() {
@@ -67,3 +67,50 @@ document.addEventListener("DOMContentLoaded", () => {
     easing: 'ease-in-out',
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const articles = document.querySelectorAll("#timeline article");
+  const dynamicPhoto = document.getElementById("dynamicPhoto");
+  const divPhoto = document.querySelector(".sticky-photo");
+  const totalImages = 13; 
+  const navBar = document.getElementById("navigation");
+
+  const scrollRange = {
+    start: articles[0].offsetTop, 
+    end: articles[articles.length - 1].offsetTop + articles[articles.length - 1].offsetHeight, 
+  };
+
+  window.addEventListener("scroll", () => {
+    const navHeight = navBar.offsetHeight;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= scrollRange.start && scrollPosition <= scrollRange.end) {
+      const scrollPercentage =
+        (scrollPosition - scrollRange.start) /
+        (scrollRange.end - scrollRange.start);
+
+      const imageIndex = Math.min(
+        totalImages,
+        Math.floor(scrollPercentage * totalImages) + 1
+      );
+
+      dynamicPhoto.src = `images/e${imageIndex}.jpg`; 
+    }
+
+    if (scrollPosition <= navHeight) { 
+      divPhoto.style.top = `${navHeight + 10}px`; 
+    } else {
+      divPhoto.style.top = "5rem";
+    }
+
+  });
+
+  const faviconIcon = document.getElementById("faviconIcon");
+  const stickyPhoto = document.querySelector(".sticky-photo");
+
+  faviconIcon.addEventListener("click", () => {
+    stickyPhoto.classList.toggle("hidden");
+  });
+
+});
+
