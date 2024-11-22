@@ -140,8 +140,8 @@ body {
   position: sticky;
   top: calc(5rem + 10px); 
   right: 3rem;
-  width: 8rem;
-  height: 8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
