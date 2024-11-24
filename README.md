@@ -23,7 +23,7 @@ A collaborative project with goal to plactise Agile aproach and idea to create a
 
 ### Documentation & Planning
 - [Draft and first idea of Project Backlog](https://docs.google.com/spreadsheets/d/1iLM_SvXh4B5W689T5BCKahEi10LeMCw-mEh8Ndyfa8U/edit?gid=0)
-- Project Backlog](https://github.com/users/m007ko/projects/1/settings/access)
+- [Project Backlog](https://github.com/users/m007ko/projects/1/settings/access)
 
 ### Development
 - [GitHub Repository](https://github.com/m007ko/einstein-biography)
