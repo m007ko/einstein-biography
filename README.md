@@ -19,12 +19,11 @@ A collaborative project with goal to plactise Agile aproach and idea to create a
 - [Initial Prototype (Canva)](https://www.canva.com/design/DAGWcfcZ-hY/ChzX7y9i9GytzMPMu-vLTg/edit)
 - [Prototype by Hanna (Figma)](https://www.figma.com/proto/ToNNNV6E6iBY0YBieilXon/Figma-basics?node-id=601-11&t=Fhbdo8RoUd2iq7dI-1)
 - [Prototype by Lincoln](https://amlincoln.netlify.app/)
-- [Main Section Skeleton (CodePen)](https://codepen.io/rosstopping/pen/kWmgxO)
+
 
 ### Documentation & Planning
-- [Project Backlog](https://docs.google.com/spreadsheets/d/1iLM_SvXh4B5W689T5BCKahEi10LeMCw-mEh8Ndyfa8U/edit?gid=0)
-- [Presentation](https://www.canva.com/design/DAGXH_uf72g/bfSKojficfN1teJl4d50_A/edit)
-- [Speech Draft](https://docs.google.com/document/d/1lyQCf3vFEId7PIhnUsr1xmTXmEMFttl3a-PWltLK-D0/edit)
+- [Draft and first idea of Project Backlog](https://docs.google.com/spreadsheets/d/1iLM_SvXh4B5W689T5BCKahEi10LeMCw-mEh8Ndyfa8U/edit?gid=0)
+- [Project Backlog](https://github.com/users/m007ko/projects/1/settings/access)
 
 ### Development
 - [GitHub Repository](https://github.com/m007ko/einstein-biography)
